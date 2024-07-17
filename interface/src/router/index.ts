@@ -29,7 +29,7 @@ const routes = [
     name: 'Register',
     component: () => import('@/views/Register.vue'),
     meta: { guest: true }
-  }
+  },
 ]
 
 const router = createRouter({

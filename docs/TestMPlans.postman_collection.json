@@ -1,0 +1,283 @@
+{
+	"info": {
+		"_postman_id": "304c0ed4-f1f0-487d-bca9-7ab948b91001",
+		"name": "TestMPlans",
+		"description": "Esta collection tem como finalidade apresentar a API referente a um sistema de gerenciamento de lista de tarefas.  \nA API foi desenvolvida utilizando Node com as técnologias Express, Sequelize para conexão com banco de dados, que por sua vez é um PostgreSQL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5834433"
+	},
+	"item": [
+		{
+			"name": "Tasks",
+			"item": [
+				{
+					"name": "Update Task",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJqb2Jzb24iLCJlbWFpbCI6ImpvYnNvbi5jaGluZWxsaUB0ZXN0ZS5jb20uYnIiLCJpYXQiOjE3MjEyMDQ0NTEsImV4cCI6MTcyMTIwODA1MX0.y6QqLUezK46_3QZK7DM8g__O8DftksXE6tth8avKcJM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"title\": \"new task 1\",\r\n        \"description\": \"task 1\",\r\n        \"priority\": 3}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/tasks/1/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tasks",
+								"1",
+								"update"
+							]
+						},
+						"description": "E"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Task",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJqb2Jzb24iLCJlbWFpbCI6ImpvYnNvbi5jaGluZWxsaUB0ZXN0ZS5jb20uYnIiLCJpYXQiOjE3MjEyMDQ0NTEsImV4cCI6MTcyMTIwODA1MX0.y6QqLUezK46_3QZK7DM8g__O8DftksXE6tth8avKcJM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"title\":\"teste\",\"description\":\"teste\",\"priority\":3,\"status\":0,\"userId\":1}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/tasks/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tasks",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Tasks",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJqb2Jzb24iLCJlbWFpbCI6ImpvYnNvbi5jaGluZWxsaUB0ZXN0ZS5jb20uYnIiLCJpYXQiOjE3MjEyMDQ0NTEsImV4cCI6MTcyMTIwODA1MX0.y6QqLUezK46_3QZK7DM8g__O8DftksXE6tth8avKcJM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"title\": \"new task 1\",\r\n        \"description\": \"task 1\",\r\n        \"priority\": 3}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/tasks/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tasks",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Complete Task",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJqb2Jzb24iLCJlbWFpbCI6ImpvYnNvbi5jaGluZWxsaUB0ZXN0ZS5jb20uYnIiLCJpYXQiOjE3MjEyMDQ0NTEsImV4cCI6MTcyMTIwODA1MX0.y6QqLUezK46_3QZK7DM8g__O8DftksXE6tth8avKcJM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"title\": \"new task 1\",\r\n        \"description\": \"task 1\",\r\n        \"priority\": 3}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/tasks/4/complete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tasks",
+								"4",
+								"complete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Task",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJqb2Jzb24iLCJlbWFpbCI6ImpvYnNvbi5jaGluZWxsaUB0ZXN0ZS5jb20uYnIiLCJpYXQiOjE3MjEyMDQ0NTEsImV4cCI6MTcyMTIwODA1MX0.y6QqLUezK46_3QZK7DM8g__O8DftksXE6tth8avKcJM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"title\": \"new task 1\",\r\n        \"description\": \"task 1\",\r\n        \"priority\": 3}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/tasks/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tasks",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Neste módulo estarão descritos os endpoints responsáveis pelo gerenciamento das tarefas. Todo processo de CRUD (Create, Read, Update e Delete) estarão dentro deste módulo.\n\nTodos os endpoints deste módulo possuem validação de Bearer Token, portanto, para acessá-los faz-se necessário efetuar o login no sistema."
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJqb2Jzb24iLCJlbWFpbCI6ImpvYnNvbi5jaGluZWxsaUB0ZXN0ZS5jb20uYnIiLCJpYXQiOjE3MjEyMDQ0NTEsImV4cCI6MTcyMTIwODA1MX0.y6QqLUezK46_3QZK7DM8g__O8DftksXE6tth8avKcJM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\":\"jobson\",\"password\":\"admin123\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJqb2Jzb24iLCJlbWFpbCI6ImpvYnNvbi5jaGluZWxsaUB0ZXN0ZS5jb20uYnIiLCJpYXQiOjE3MjEyMDQ0NTEsImV4cCI6MTcyMTIwODA1MX0.y6QqLUezK46_3QZK7DM8g__O8DftksXE6tth8avKcJM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\":\"teste2\",\"email\":\"teste@teste.com.br\",\"password\":\"123456\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

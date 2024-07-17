@@ -1,7 +1,7 @@
-# Task Manager Front-end 
-A simple interface developed with Vue 3 and Vuetify
+# Task Manager REST API 
+A RESTful API example for simple task manager application with Node, Express, Sequelize and PostgreSQL support
 
-
+It is a just simple  RESTful API
 ## Installation & Run
 ```bash
 # Download this project
@@ -47,9 +47,7 @@ npm start
 
 # API Endpoint : http://127.0.0.1:5000
 
-# Run the Front-end application
-cd /interface
-npm run dev
+
 
 - [x] Support basic REST APIs.
 - [x] Support Authentication with user for securing the APIs.
