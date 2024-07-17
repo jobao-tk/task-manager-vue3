@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "304c0ed4-f1f0-487d-bca9-7ab948b91001",
-		"name": "TestMPlans",
+		"name": "Task Manager API",
 		"description": "Esta collection tem como finalidade apresentar a API referente a um sistema de gerenciamento de lista de tarefas.  \nA API foi desenvolvida utilizando Node com as técnologias Express, Sequelize para conexão com banco de dados, que por sua vez é um PostgreSQL",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "5834433"
